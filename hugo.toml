@@ -1,0 +1,81 @@
+baseURL = 'https://blog.renzheng.me/'
+languageCode = 'zh'
+title = "Renzheng's Blog"
+copyright = "This is a customized copyright."
+theme = 'diary'
+DefaultContentLanguage = "zh"
+
+# Generate sitemap in the public folder
+[sitemap]
+    changefreq = "always"
+    filename = "sitemap.xml"
+    priority = 0.5
+
+# Google Analytics
+[services]
+    [services.googleAnalytics]
+        id = "G-S55R3599C4"  # Your Google Analytics ID
+
+[markup]
+    [markup.highlight]
+        codeFences = true
+        guessSyntax = false
+        hl_Lines = ""
+        lineNoStart = 1
+        lineNos = false
+        lineNumbersInTable = true
+        noClasses = true
+        style = "onedark"
+        tabWidth = 4
+
+[params]
+    favicon = "/favicon.png"
+    subtitle = "Themed by Diary."
+    enableGitalk = false
+    enableGiscus = false
+    googleSearchCode = "f349195931cd543b9"
+    enableLaTeX = true
+    walineServer = "https://comments.renzheng.me"
+
+# Twitter Card and Open Graph settings
+enableOpenGraph = true
+enableTwitterCards = true
+title = "My Blog" # will set 'og:site_name'
+description = "My HomePage Description"  # will set 'og:description'
+
+
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+    about = "about"
+
+[params.utterances]
+    repo="your repo"
+    term="[ENTER TERM HERE]"
+    label="your label"
+    theme="github-light"
+
+[[menu.main]]
+    url = "/categories"
+    name = "分类 Categories"
+    weight = 2
+
+[[menu.main]]
+    url = "/about"
+    name = "关于 About"
+    weight = 4
+
+[[menu.main]]
+    url = "/tags"
+    name = "标签 Tags"
+    weight = 3
+
+[[menu.main]]
+    url = "/posts"
+    name = "归档 Archive"
+    weight = 1
+
+[[menu.main]]
+    url = "/index.xml"
+    name = "RSS Feed"
+    weight = 5

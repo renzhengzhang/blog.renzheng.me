@@ -1,0 +1,133 @@
+<?xml-stylesheet href="/rss.xsl" type="text/xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Renzheng&#39;s Blog</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Renzheng&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Sun, 16 Mar 2025 21:42:23 +0800</lastBuildDate>
+    
+        <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+        <item>
+        <title>一级标题：综合样式测试文章</title>
+        <link>http://localhost:1313/posts/test/</link>
+        <pubDate>Sun, 16 Mar 2025 21:42:23 +0800</pubDate>
+        
+        <guid>http://localhost:1313/posts/test/</guid>
+        <description>Renzheng&#39;s Blog http://localhost:1313/posts/test/ -&lt;h2 id=&#34;二级标题文字排版测试&#34;&gt;二级标题：文字排版测试&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;粗体文字&lt;/strong&gt; &lt;em&gt;斜体文字&lt;/em&gt; &lt;del&gt;删除线&lt;/del&gt; &lt;code&gt;行内代码&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;引用区块：昨夜星辰昨夜风，画楼西畔桂堂东。身无彩凤双飞翼，心有灵犀一点通。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;无序列表：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;列表项一&lt;/li&gt;
+&lt;li&gt;列表项二
+&lt;ul&gt;
+&lt;li&gt;嵌套列表项&lt;/li&gt;
+&lt;li&gt;嵌套列表项&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;有序列表：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;第一项&lt;/li&gt;
+&lt;li&gt;第二项&lt;/li&gt;
+&lt;li&gt;第三项&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;二级标题代码块测试&#34;&gt;二级标题：代码块测试&lt;/h2&gt;
+&lt;h3 id=&#34;三级标题基础代码块&#34;&gt;三级标题：基础代码块&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#61afef;font-weight:bold&#34;&gt;fibonacci&lt;/span&gt;(&lt;span style=&#34;color:#e06c75&#34;&gt;n&lt;/span&gt;):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e06c75&#34;&gt;a&lt;/span&gt;, &lt;span style=&#34;color:#e06c75&#34;&gt;b&lt;/span&gt; &lt;span style=&#34;color:#56b6c2&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#d19a66&#34;&gt;0&lt;/span&gt;, &lt;span style=&#34;color:#d19a66&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#c678dd&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#e06c75&#34;&gt;_&lt;/span&gt; &lt;span style=&#34;color:#56b6c2&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#e5c07b&#34;&gt;range&lt;/span&gt;(&lt;span style=&#34;color:#e06c75&#34;&gt;n&lt;/span&gt;):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#c678dd&#34;&gt;yield&lt;/span&gt; &lt;span style=&#34;color:#e06c75&#34;&gt;a&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;a&lt;/span&gt;, &lt;span style=&#34;color:#e06c75&#34;&gt;b&lt;/span&gt; &lt;span style=&#34;color:#56b6c2&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e06c75&#34;&gt;b&lt;/span&gt;, &lt;span style=&#34;color:#e06c75&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#56b6c2&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#e06c75&#34;&gt;b&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e5c07b&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#e5c07b&#34;&gt;list&lt;/span&gt;(&lt;span style=&#34;color:#e06c75&#34;&gt;fibonacci&lt;/span&gt;(&lt;span style=&#34;color:#d19a66&#34;&gt;10&lt;/span&gt;)))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;三级标题带行号代码块&#34;&gt;三级标题：带行号代码块&lt;/h3&gt;
+&lt;div class=&#34;highlight line-numbers&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#c678dd&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#e06c75&#34;&gt;debounce&lt;/span&gt;(&lt;span style=&#34;color:#e06c75&#34;&gt;func&lt;/span&gt;, &lt;span style=&#34;color:#e06c75&#34;&gt;delay&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#c678dd&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#e06c75&#34;&gt;timer&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#c678dd&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#c678dd&#34;&gt;function&lt;/span&gt;(...&lt;span style=&#34;color:#e06c75&#34;&gt;args&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;clearTimeout&lt;/span&gt;(&lt;span style=&#34;color:#e06c75&#34;&gt;timer&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#e06c75&#34;&gt;timer&lt;/span&gt; &lt;span style=&#34;color:#56b6c2&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e06c75&#34;&gt;setTimeout&lt;/span&gt;(() =&amp;gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#e06c75&#34;&gt;func&lt;/span&gt;.&lt;span style=&#34;color:#e06c75&#34;&gt;apply&lt;/span&gt;(&lt;span style=&#34;color:#c678dd&#34;&gt;this&lt;/span&gt;, &lt;span style=&#34;color:#e06c75&#34;&gt;args&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }, &lt;span style=&#34;color:#e06c75&#34;&gt;delay&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    };
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;二级标题数学公式测试&#34;&gt;二级标题：数学公式测试&lt;/h2&gt;
+&lt;h3 id=&#34;三级标题行内公式&#34;&gt;三级标题：行内公式&lt;/h3&gt;
+&lt;p&gt;质能方程 $E=mc^2$ 是狭义相对论的重要结论&lt;/p&gt;
+&lt;h3 id=&#34;三级标题块级公式&#34;&gt;三级标题：块级公式&lt;/h3&gt;
+&lt;p&gt;$$
+\begin{cases}
+\frac{\partial u}{\partial t} + u \cdot \nabla u = -\frac{1}{\rho}\nabla p + \nu \nabla^2 u \
+\nabla \cdot u = 0
+\end{cases}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;二级标题图片测试&#34;&gt;二级标题：图片测试&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/pexels-christian-heitz-285904-842711.jpg&#34; alt=&#34;默认图片&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;二级标题表格测试&#34;&gt;二级标题：表格测试&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;算法&lt;/th&gt;
+          &lt;th&gt;时间复杂度&lt;/th&gt;
+          &lt;th&gt;空间复杂度&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;快速排序&lt;/td&gt;
+          &lt;td&gt;O(n log n)&lt;/td&gt;
+          &lt;td&gt;O(log n)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;冒泡排序&lt;/td&gt;
+          &lt;td&gt;O(n²)&lt;/td&gt;
+          &lt;td&gt;O(1)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;归并排序&lt;/td&gt;
+          &lt;td&gt;O(n log n)&lt;/td&gt;
+          &lt;td&gt;O(n)&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;二级标题特殊元素&#34;&gt;二级标题：特殊元素&lt;/h2&gt;
+&lt;p&gt;水平分割线测试：&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;脚注测试&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;这是一个示例脚注内容&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;- http://localhost:1313/posts/test/ - This is a customized copyright.</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>关于</title>
+        <link>http://localhost:1313/about/</link>
+        <pubDate>Sun, 16 Mar 2025 18:26:11 +0800</pubDate>
+        
+        <guid>http://localhost:1313/about/</guid>
+        <description>Renzheng&#39;s Blog http://localhost:1313/about/ -&lt;p&gt;关于测试&lt;/p&gt;
+- http://localhost:1313/about/ - This is a customized copyright.</description>
+        </item>
+    
+    
+  </channel>
+</rss> 
