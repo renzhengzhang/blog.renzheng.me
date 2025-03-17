@@ -1,7 +1,7 @@
 baseURL = 'https://blog.renzheng.me/'
 languageCode = 'zh'
 title = "Renzheng's Blog"
-copyright = "This is a customized copyright."
+copyright = "© 2025 Renzheng's Blog. 本站遵循 CC-BY-NC 4.0 协议"
 theme = 'diary'
 DefaultContentLanguage = "zh"
 
