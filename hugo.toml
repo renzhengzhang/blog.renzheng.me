@@ -34,7 +34,7 @@ DefaultContentLanguage = "zh"
     enableGitalk = false
     enableGiscus = false
     googleSearchCode = "f349195931cd543b9"
-    enableLaTeX = true
+    # enableLaTeX = true
     walineServer = "https://comments.renzheng.me"
 
 # Twitter Card and Open Graph settings
