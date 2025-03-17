@@ -31,11 +31,12 @@ DefaultContentLanguage = "zh"
 [params]
     favicon = "/favicon.png"
     subtitle = "Themed by Diary."
-    enableGitalk = false
+    enableGitalk = true
     enableGiscus = false
     googleSearchCode = "f349195931cd543b9"
-    # enableLaTeX = true
-    walineServer = "https://comments.renzheng.me"
+    enableLaTeX = true
+    # walineServer = "https://comments.renzheng.me"
+
 
 # Twitter Card and Open Graph settings
 enableOpenGraph = true
@@ -43,6 +44,11 @@ enableTwitterCards = true
 title = "My Blog" # will set 'og:site_name'
 description = "My HomePage Description"  # will set 'og:description'
 
+[params.gitalk]
+  owner = "renzhengzhang"
+  repo = "blog.renzheng.me"
+  client_id = "Ov23liTVZ0AQFmS0JfPf"
+  client_secret = "cef10d429b9b027ec60caef399d948a8f72d8ba1"
 
 [taxonomies]
     tag = "tags"
