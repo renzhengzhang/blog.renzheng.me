@@ -31,7 +31,8 @@ DefaultContentLanguage = "zh"
 [params]
     favicon = "/favicon.png"
     subtitle = "Themed by Diary."
-    enableGitalk = true
+    enableUtterances = true
+    enableGitalk = false
     enableGiscus = false
     googleSearchCode = "f349195931cd543b9"
     enableLaTeX = true
@@ -56,9 +57,9 @@ description = "My HomePage Description"  # will set 'og:description'
     about = "about"
 
 [params.utterances]
-    repo="your repo"
-    term="[ENTER TERM HERE]"
-    label="your label"
+    repo="renzhengzhang/blog.renzheng.me"
+    term="pathname"
+    label="Commet"
     theme="github-light"
 
 [[menu.main]]
