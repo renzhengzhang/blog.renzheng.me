@@ -1,0 +1,11 @@
+// The diary theme resets the subtitle line-height only in the featured-image
+// header (.post-head-wrapper); the text-only header lets the 30px title's
+// 1.5em line box (45px) leak into the 14px description, so the vertical
+// rhythm there came from leading instead of margins. The selector mirrors the
+// theme's full chain (including the .stream-container .post prefix) so this
+// override wins by cascade order instead of !important.
+.stream-container .post .post-head-wrapper-text-only .post-title .post-subtitle {
+  line-height: 1.6;
+  padding-bottom: 0;
+  margin: 4px 0 14px;
+}

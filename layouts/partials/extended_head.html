@@ -1,5 +1,8 @@
 {{ $tocStyles := resources.Get "scss/toc.scss" | toCSS | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $tocStyles.RelPermalink }}" integrity="{{ $tocStyles.Data.Integrity }}" media="screen">
 
+{{ $postHeadStyles := resources.Get "scss/post-head.scss" | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $postHeadStyles.RelPermalink }}" integrity="{{ $postHeadStyles.Data.Integrity }}" media="screen">
+
 {{/* This site overrides the theme's head.html, so include the lightbox here. */}}
 {{- partial "lightbox.html" . }}
