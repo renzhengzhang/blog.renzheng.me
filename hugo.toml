@@ -11,6 +11,11 @@ DefaultContentLanguage = "zh"
     filename = "sitemap.xml"
     priority = 0.5
 
+# Google Analytics
+[services]
+    [services.googleAnalytics]
+        id = "G-S55R3599C4"  # Your Google Analytics ID
+
 [markup]
     [markup.highlight]
         codeFences = true
