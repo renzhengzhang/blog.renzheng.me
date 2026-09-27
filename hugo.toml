@@ -35,6 +35,7 @@ DefaultContentLanguage = "zh"
     enableGitalk = false
     enableGiscus = false
     googleSearchCode = "f349195931cd543b9"
+    enableImageLightbox = true
     # LaTeX is auto-detected per page by layouts/partials/head.html;
     # set `enableLaTeX = true` in a post's front matter to force it on.
     # walineServer = "https://comments.renzheng.me"
