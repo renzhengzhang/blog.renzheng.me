@@ -57,6 +57,19 @@ Vercel builds and serves the site from this repository. Changes merged or pushed
 
 Keep deployment configuration compatible with Hugo's default output directory (`public/`) unless the Vercel project configuration is updated at the same time.
 
+### Vercel build environment
+
+- Vercel currently uses Hugo `0.145.0` extended on Linux. This version is older than the local Hugo installation, so templates and configuration must remain compatible with it.
+- The Vercel build command initializes the theme dependency before building:
+
+  ```sh
+  git submodule update --init --recursive && hugo --gc
+  ```
+
+- Use `languageCode` in `hugo.toml` and `.Site.Language.Lang` in templates. Hugo `0.145.0` does not support the newer `locale` configuration key or `.Site.Language.Locale`.
+- The site-level RSS override must continue to avoid the Diary theme's removed `.Site.Author` API. Use the optional `[params.author]` values instead.
+- If the Hugo version is changed in the Vercel project, run a production build with that exact version and verify the homepage, RSS (`/index.xml`), sitemap, and taxonomy pages before deploying.
+
 ## Change expectations
 
 - Keep changes focused and avoid reformatting unrelated posts or generated resources.
