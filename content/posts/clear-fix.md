@@ -1,7 +1,7 @@
 +++
 date = '2026-09-27T17:19:37+08:00'
 title = 'CSS 清除 Float'
-categories = ['CSS']
+categories = 'CSS'
 tags = ['CSS']
 description = '浮动元素不会撑开父容器的高度，本文介绍用 overflow: hidden 建立 BFC 和 clearfix 伪元素两种处理方式，以及各自的适用场景。'
 +++
