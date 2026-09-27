@@ -1,0 +1,2 @@
+{{ $tocStyles := resources.Get "scss/toc.scss" | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $tocStyles.RelPermalink }}" integrity="{{ $tocStyles.Data.Integrity }}" media="screen">

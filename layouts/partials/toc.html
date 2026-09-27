@@ -1,0 +1,64 @@
+{{ $headers := findRE "<h[1-4].*?>(.|\n])+?</h[1-4]>" .Content }}
+{{ if ge (len $headers) 1 }}
+  <div class="toc-content">
+    {{ $h1Count := len (findRE "<h1[ >]" .Content) }}
+    {{ $headingPattern := cond (eq $h1Count 0) "<h[2-4]" "<h[1-4]" }}
+    {{ $headingLevelPattern := cond (eq $h1Count 0) "[2-4]" "[1-4]" }}
+    {{ $scratch := newScratch }}
+    {{ $scratch.Set "baseHeading" 4 }}
+    {{ range $headers }}
+      {{ range first 1 (findRE $headingPattern . 1) }}
+        {{ range findRE $headingLevelPattern . 1 }}
+          {{ $heading := cond (eq $h1Count 0) (sub (int .) 1) (int .) }}
+          {{ if lt $heading ($scratch.Get "baseHeading") }}
+            {{ $scratch.Set "baseHeading" $heading }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    {{ $scratch.Set "previousHeading" ($scratch.Get "baseHeading") }}
+    {{ $scratch.Set "hasItem" false }}
+    <div class="toc-title">{{ i18n "toc_title" }}</div>
+    <ul>
+      {{ range $headers }}
+        {{ $header := . }}
+        {{ range first 1 (findRE $headingPattern $header 1) }}
+          {{ range findRE $headingLevelPattern . 1 }}
+            {{ $nextHeading := cond (eq $h1Count 0) (sub (int .) 1) (int .) }}
+            {{ $previousHeading := $scratch.Get "previousHeading" }}
+            {{ if $scratch.Get "hasItem" }}
+              {{ if gt $nextHeading (add $previousHeading 1) }}
+                {{ $nextHeading = add $previousHeading 1 }}
+              {{ end }}
+              {{ if le $nextHeading $previousHeading }}
+                </li>
+                {{ if lt $nextHeading $previousHeading }}
+                  {{ range seq (sub $previousHeading $nextHeading) }}
+                    </ul></li>
+                  {{ end }}
+                {{ end }}
+              {{ else }}
+                {{ range seq (sub $nextHeading $previousHeading) }}
+                  <ul>
+                {{ end }}
+              {{ end }}
+            {{ end }}
+            {{ $anchorID := replaceRE ".* id=\"(.*?)\".*" "$1" $header }}
+            <li>
+              <a href="#{{ $anchorID }}" class="nav-{{ $anchorID }}">
+                {{ $header | plainify | htmlUnescape }}
+              </a>
+            {{ $scratch.Set "previousHeading" $nextHeading }}
+            {{ $scratch.Set "hasItem" true }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+      </li>
+      {{ if gt ($scratch.Get "previousHeading") ($scratch.Get "baseHeading") }}
+        {{ range seq (sub ($scratch.Get "previousHeading") ($scratch.Get "baseHeading")) }}
+          </ul></li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </div>
+{{ end }}
