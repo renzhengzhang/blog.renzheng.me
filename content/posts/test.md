@@ -4,7 +4,7 @@ title = '一级标题：综合样式测试文章'
 categories= "测试"
 tags = ['测试1', '测试2']
 description = "测试描述"
-featured_image = "/images/pexels-christian-heitz-285904-842711.jpg"
+featured_image = "/images/pexels-christian-heitz-285904-842711.webp"
 +++
 
 ## 二级标题：文字排版测试
@@ -73,7 +73,7 @@ $$
 
 ## 二级标题：图片测试
 
-![默认图片](/images/pexels-christian-heitz-285904-842711.jpg)
+![默认图片](/images/pexels-christian-heitz-285904-842711.webp)
 
 ---
 

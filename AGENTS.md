@@ -41,6 +41,7 @@ This command writes the generated site to `public/`. Do not edit generated files
 - New posts are drafts by default. Set `draft = false` before publishing.
 - Supply a clear `title` and date with the `+08:00` timezone. Add `description`, `categories`, `tags`, and `featured_image` when appropriate.
 - Use absolute site paths for static assets, for example `/images/example.jpg`. Put those assets in `static/images/`.
+- Compress large images before adding them (resize to the display width and prefer WebP); a 5 MB photo used as `featured_image` dominates page weight.
 - Preserve the site's Chinese-first content and existing Markdown conventions, including `<!--more-->` when an article needs an explicit summary break.
 
 ## Configuration and theme
@@ -69,6 +70,11 @@ Keep deployment configuration compatible with Hugo's default output directory (`
 - Use `languageCode` in `hugo.toml` and `.Site.Language.Lang` in templates. Hugo `0.145.0` does not support the newer `locale` configuration key or `.Site.Language.Locale`.
 - The site-level RSS override must continue to avoid the Diary theme's removed `.Site.Author` API. Use the optional `[params.author]` values instead.
 - If the Hugo version is changed in the Vercel project, run a production build with that exact version and verify the homepage, RSS (`/index.xml`), sitemap, and taxonomy pages before deploying.
+
+### Performance-related site overrides
+
+- `layouts/partials/head.html` overrides the Diary theme head. It self-hosts Material Icons from `static/fonts/` (the upstream `fonts.googleapis.com` stylesheet is render-blocking and unreachable in parts of China) and loads KaTeX only on pages whose rendered text contains math delimiters (`$`, `\(`, `\[`) or whose front matter sets `enableLaTeX = true`, so the ~270 kB CDN bundle is not fetched on every page.
+- `vercel.json` defines cache headers: fingerprinted `/scss/` output is immutable for one year; `/fonts/`, `/images/`, `/vendor/`, and `/js/` use long-lived revalidating caches.
 
 ## Change expectations
 

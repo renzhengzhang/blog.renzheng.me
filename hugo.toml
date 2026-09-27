@@ -35,7 +35,8 @@ DefaultContentLanguage = "zh"
     enableGitalk = false
     enableGiscus = false
     googleSearchCode = "f349195931cd543b9"
-    enableLaTeX = true
+    # LaTeX is auto-detected per page by layouts/partials/head.html;
+    # set `enableLaTeX = true` in a post's front matter to force it on.
     # walineServer = "https://comments.renzheng.me"
 
 
@@ -44,12 +45,6 @@ enableOpenGraph = true
 enableTwitterCards = true
 title = "My Blog" # will set 'og:site_name'
 description = "My HomePage Description"  # will set 'og:description'
-
-[params.gitalk]
-  owner = "renzhengzhang"
-  repo = "blog.renzheng.me"
-  client_id = "Ov23liTVZ0AQFmS0JfPf"
-  client_secret = "cef10d429b9b027ec60caef399d948a8f72d8ba1"
 
 [taxonomies]
     tag = "tags"
