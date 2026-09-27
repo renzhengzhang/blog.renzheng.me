@@ -1,5 +1,5 @@
 baseURL = 'https://blog.renzheng.me/'
-languageCode = 'zh'
+locale = 'zh'
 title = "Renzheng's Blog"
 copyright = "2025 Renzheng's Blog. 本站遵循 CC-BY-NC 4.0 协议"
 theme = 'diary'
