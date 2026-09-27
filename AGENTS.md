@@ -47,7 +47,7 @@ This command writes the generated site to `public/`. Do not edit generated files
 
 - Keep the canonical production URL as `https://blog.renzheng.me/` in `hugo.toml`.
 - Make site-level configuration changes in `hugo.toml`; do not modify theme files for a site-specific setting unless no supported theme parameter exists.
-- The site-level `layouts/index.rss.xml` overrides the theme RSS template for current Hugo compatibility. Optional RSS author metadata belongs under `[params.author]` (`name` and `email`).
+- The site-level `layouts/index.rss.xml` overrides the theme RSS template for Hugo compatibility. Optional RSS author metadata belongs under `[params.author]` (`name` and `email`).
 - Treat `themes/diary` as an external dependency. Theme changes should normally be made in its own repository and recorded here by updating the submodule pointer.
 - Do not put credentials, tokens, or private keys in `hugo.toml`, content files, or Git history. Use the hosting platform's environment-variable or secret settings where a secret is needed.
 
